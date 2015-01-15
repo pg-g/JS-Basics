@@ -55,15 +55,15 @@ adder(1, 2, 3);
 //5. Next Problem
 //What is the difference between arguments and parameters?
   //Answer Here
-Parameters are set up in the function definition, behave like local variables
-Arguments are passed into the function when the function is invoked
+//Parameters are set up in the function definition, behave like local variables
+//Arguments are passed into the function when the function is invoked
 
 
 //6. Next problem
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
   //Answer Here
-falsy is undefined, null, 0, '', NaN, none
-!!! check if something is falsy by 
+//falsy is undefined, null, 0, '', NaN, none
+//check by checking if the thing (variable, object, whatever) exists, so like >>> if (theVariable) {}
 
 
 //7. Next Problem
@@ -86,17 +86,14 @@ newMyName();
 //Create a function called outerFn which returns an anonymous function which returns your name.
   //Code Here
 var outerFn = function() {
-  function() {
+  return function() {
     return "Paige";
   }
 };
 //Now save the result of invoking outerFn into a variable called innerFn.
   //Code Here
-
+innerFn = outerFn();
 
 //Now invoke innerFn.
-
-
-
-
+innerFn();
 
